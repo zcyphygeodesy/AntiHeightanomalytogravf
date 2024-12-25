@@ -9,11 +9,11 @@ https://www.zcyphygeodesy.com/en/h-nd-143.html
     Input parameters: calcpntfl - the calculation point file name on the equipotential boundary surface. The record format of the input calculation point file: ID (point no / point name), longitude (decimal degrees), latitude (decimal degrees), ellipsoidal height (m), ......
     Input parameters: boundryfl - the ellipsoidal height grid file of the boundary surface . The grid will be employed to calculate the integral distance where the height anomaly grid is located.
     Input parameters: ksigrdfl - the residual height anomaly grid file name on the surface.
-The same grid specifications are required for the ellipsoidal height grid of the boundary  surface and residual  height anomaly grid on the surface.
+The same grid specifications are required for the ellipsoidal height grid of the boundary surface and residual height anomaly grid on the surface.
 ## (1) Module for computation of other field elements from height anomaly
     AntiKsitogravfd(calcpntfl,boundryfl,ksigrdfl,dr)
     The output file reslt.txt, whose record format: Behind the record of the calculation point file, appends 4 columns of attributes including residual gravity anomaly, residual gravity disturbance and residual vertical deflection southward and westward.
-## (2) Module for numerical integral of Poisson on residual field element
+## (2) Module for Poisson integral operation on residual field element
     real*8 function PoissonBLH(BLH,gra,sfh,nlat,nlon,hd,dr,GRS)
     Input parameters: BLH(3) - longitude (decimal degrees), latitude (decimal degrees), ellipsoidal height (m) of the calculation point.
     Input parameters: sfh(nlat,nlon) - the ellipsoidal height grid of the boundary surface, which employed to calculate the integral distance.
