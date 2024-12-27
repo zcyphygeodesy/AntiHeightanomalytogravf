@@ -33,4 +33,4 @@ The same grid specifications are required for the ellipsoidal height grid of the
     CGrdPntD2(lon,lat,dt,row,col,hd)；PickRecord(line, kln, rec, nn)
 ## [For compile and link]
     Fortran90, 132 Columns fixed format. Fortran compiler for any operating system. No external link library required.
-The zip compression package in the attachment includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable test file and all input and output data.
+The zip compression package includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable test file and all input and output data.
